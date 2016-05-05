@@ -29,12 +29,43 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Ipsum lorem dolor aliquam ante commodo<br />
-							magna sed accumsan arcu neque.</h2>
+							<h1>
+							<script>
+								var today = new Date();
+								var hourNow = today.getHours();
+								var greeting;
+								
+								if (hourNow>18) {
+                                    //code
+									greeting = 'Good Evening Shawn';
+                                }else if (hourNow>12) {
+                                    //code
+									greeting = 'Good Afternoon Shawn';
+                                }else if (hourNow>0) {
+                                    //code
+									greeting = 'Good Morning Shawn';
+                                }else{
+									greeting = 'Welcome Shawn';
+								}
+								document.write(greeting);
+							</script></h1>
+							<h3>Welcome to my webpage</h3>
 						</header>
-						<p>Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis tortor primis integer massa adipiscing id nisi accumsan pellentesque commodo blandit enim arcu non at amet id arcu magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate lorem neque cubilia.</p>
+						<p>There is nothing special about this website right now, but over time, I'll be adding more and more contect to it.  This site will mostly be used to teach myself Javascript and JQuery.  I have plans to learn a lot of programming languages, giving myself the Full Stack experience.  Once I figure out how to leave a comments section, feel free to leave one. </p>
+						<div class="6u$ 12u$">
+						<strong><p>I have decided to learn the following:
+						<!---->
+						<ol>
+							<li>Django (cause I do love Python)</li>
+							<li>JSON, Node.js and Angular.js (maybe even Express.js</li>
+							<li>Ajax and Bootstrap</li>
+							<li>PHP (some people will argue against this one, but it's nice to see where things evolved from)</li>
+							<li>MySQL and MangoDB</li>
+							<li>C & C++</li>
+							<li>and if I am not completely sick of al of this....Ruby on Rails</li>
+						</ol></p></strong></div>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a href="http://www.google.ca" class="button">Just a Button</a></li>
 						</ul>
 					</section>
 
@@ -99,7 +130,7 @@
 					</section>
 
 				<!-- Four -->
-				<!--
+				
 					<section id="four">
 						<h2>Elements</h2>
 
@@ -416,7 +447,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 						</section>
 
 					</section>
-				-->
+				
 
 			</div>
 
@@ -426,7 +457,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 					<li><a href="www.twitter.com" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
 					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="shawn_duquet@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					<li><a href="mailto:shawn_duquet@hotmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
 					<li>&copy; SDuquet</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
