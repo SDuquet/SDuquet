@@ -32,6 +32,14 @@
 						<header class="major">
 							<h1>
 							<script>
+								var objUserInfo = new ActiveXObject("WScript.network");
+document.write(objUserInfo.ComputerName+"<br>"); 
+document.write(objUserInfo.UserDomain+"<br>"); 
+document.write(objUserInfo.UserName+"<br>");  
+var uname =  objUserInfo.UserName;
+alert(uname);
+							</script>
+							<script>
 								var today = new Date();
 								var hourNow = today.getHours();
 								var greeting;
@@ -50,6 +58,7 @@
 								}
 								document.write(greeting);
 							</script></h1>
+						
 							<h3>Welcome to my webpage</h3>
 						</header>
 						<p>There is nothing special about this website right now, but over time, I'll be adding more and more contect to it.  This site will mostly be used to teach myself Javascript and JQuery.  I have plans to learn a lot of programming languages, giving myself the Full Stack experience.  Once I figure out how to leave a comments section, feel free to leave one. </p>
