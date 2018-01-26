@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>GPS TEST</title>
+	</head>
+	<body>
+		<button onclick="myLocation()"> Click to Get Location </button>
+
+		<p id="myloc"></p>
+		
+		<script type="text/javascript">
+			var loc = document.getElementById('myloc');
+			
+			function myLocation(){
+				if(navigator.geolocation){
+					navigator.geolocation.getCurrentPosition(showPosition);
+				}else{
+						loc.innerHTML = "Location Tracking not Possible";
+				}
+			}
+
+			function showPosition(position){
+				loc.innerHTML = "Longitude: " + position.coords.longitude + "<br> Latitude: " + position.coords.latitude + "<br>";
+			}
+
+		</script>
+	</body>
+</html>
