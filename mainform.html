@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--<link rel="stylesheet" type="text/css" href="main/style.css">-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Well Construction Form</title>
+</head>
+<body>
+  <form method="post" action="mailto:GroundwaterSection@gov.nl.ca" enctype="text/plain">
+    <div id="content" class="header">
+      <div id="head1" class="grid">
+        <h1>Well Construction Record</h1>
+        <h3>Well Owner Information<br />(must be the final owner of well or borehole)</h3>
+      </div>
+      <div id="head2" class="grid">
+        <h3>Measurements Used</h3>
+        <ul>
+          <li><input type="radio" id="metric" class="radio" name="units" value="metric" checked><label for="metric"> Metric</label></li>
+          <li><input type="radio" id="usimperial" class="radio" name="units" value="usimperial"><label for="usimperial"> US Imperial</label></li>
+          <li><input type="radio" id="imperial" class="radio" name="units" value="imperial"><label for="imperial">  Imperial</label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container">
+      <div id="winfo" class="grid">
+        <h4>Well/Borehole Owner Information</h4>
+        <ul>
+          <li>First name: <br><input type="text" name="Firstname" value="" placeholder="*required" ></li>
+          <li>Last name: <br><input type="text" name="Lasttname" value="" placeholder="*required" ></li>
+          <li>Street Address: <br><input type="text" name="Street" value="" placeholder="*required" ></li>
+          <li>Town/City: <br><input type="text" name="Town" value="" placeholder="*required" ></li>
+          <li>Postal Code: <br><input type="text" name="Pcode" value="" placeholder="*required" ></li>
+          <li>Phone Number: <br><input type="text" name="Tnumber" value=""></li>
+          <li>Email Address: <br><input type="email" name="Email" value=""></li>
+        </ul>
+      </div>
+      <div id="wloc" class="grid">
+        <h4>Well/Borehole Location</h4>
+
+          <p>If the Well/Borehole has the same location as the Well Owner Information, click Here: <input type="checkbox" name="SameInfo" value="Yes" id="sminfo"></p>
+          <ul>
+          <li>Town/City: <br><input type="text" name="WellTown" value=""></li>
+          <li>Street Address / Lot Number: <br><input type="text" name="WellStreet" value=""></li>
+          <li>Land Owner (Developer, Private, etc.): <br><input type="text" name="WellOwner" value=""></li>
+        </ul>
+        <div id="calcGPS" class="grid">
+          <h3>GPS Location</h3>
+          <ul>
+          <li>Latitude N <br><input type="text" name="LatN" value=""></li>
+          <li>Longitude E <br><input type="text" name="LongW" value=""></li>
+          </ul>
+        </div>
+      </div>
+        <div id="summary" class="grid">
+          <h3>Summary</h3>
+          <ul>
+            <li>Depth to Bedrock: <br><input type="text" name="BedDepth" value="" placeholder="*required" ></li>
+            <li>Depth of Borehole Containing Casing: <br><input type="text" name="CasingDepth" value="" placeholder="*required"  ></li>
+            <li>Total Depth of Borehole <br><input type="text" name="TotalDepth" value="" placeholder="*required" ></li>
+          </ul>
+        </div>
+        <div id="litho" class="grid">
+          <table style="">
+            <caption><h3>Borehole Lithology</h3></caption>
+            <tr>
+              <th>Depth (end)</th>
+              <th>Colour</th>
+              <th>Lithology</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="Depth1" value=""></td>
+              <td><input type="text" name="Colour1" value=""></td>
+              <td><input type="text" name="Lithology1" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="Depth2" value=""></td>
+              <td><input type="text" name="Colour2" value=""></td>
+              <td><input type="text" name="Lithology2" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="Depth3" value=""></td>
+              <td><input type="text" name="Colour3" value=""></td>
+              <td><input type="text" name="Lithology3" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="Depth4" value=""></td>
+              <td><input type="text" name="Colour4" value=""></td>
+              <td><input type="text" name="Lithology4" value=""></td>
+            </tr>
+          </table>
+
+        </div>
+        <div id="watzones" class="grid">
+          <table style="">
+            <caption><h3>Water Bearing Zones</h3></caption>
+            <tr>
+              <th>Depth (end)</th>
+              <th>Rate</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td><input type="text" name="WBZDepth1" value=""></td>
+              <td><input type="text" name="WBZRate1" value=""></td>
+              <td><input type="text" name="WBZType1" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="WBZDepth2" value=""></td>
+              <td><input type="text" name="WBZRate2" value=""></td>
+              <td><input type="text" name="WBZType2" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="WBZDepth3" value=""></td>
+              <td><input type="text" name="WBZRate3" value=""></td>
+              <td><input type="text" name="WBZType3" value=""></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="WBZDepth4" value=""></td>
+              <td><input type="text" name="WBZRate4" value=""></td>
+              <td><input type="text" name="WBZType4" value=""></td>
+            </tr>
+          </table>
+        </div>
+        <div id="waterType" class="grid">
+          <h3>Type of Water Encountered</h3>
+          <ul>
+            <li><input type="checkbox" name="Watertype1" value="Fresh" id="waterType1"><label for="type1"> Fresh</label></li>
+            <li><input type="checkbox" name="Watertype2" value="Cloudy" id="waterType2"><label for="type2"> Cloudy</label></li>
+            <li><input type="checkbox" name="Watertype3" value="Odourous" id="waterType3"><label for="type3"> Odourous</label></li>
+            <li><input type="checkbox" name="Watertype4" value="Clear" id="waterType4"><label for="type4"> Clear</label></li>
+            <li><input type="checkbox" name="Watertype5" value="Salt" id="waterType5"><label for="type5"> Salt</label></li>
+            <li><input type="checkbox" name="Watertype6" value="Coloured" id="waterType6"><label for="type6"> Coloured</label></li>
+            <li><input type="checkbox" name="Watertype7" value="Other" id="waterType7"><label for="type7"> Other: </label><input type="text" name="othertype7" value=""></li>
+          </ul>
+        </div>
+        <div id="casinfo" class="grid">
+          <h3>Casing Information <br>(recommend Sch40, 0.280 Wall)</h3>
+          <p>Standard Casing Used: <input type="checkbox" name="CasingUsed" value="Yes" ></p>
+          <ul>
+            <li>Depth From: <br><input type="text" name="CaseDepthfrom" value=""></li>
+            <li>Depth To: <br><input type="text" name="CaseDepthto" value=""></li>
+            <li>Inside Diameter: <br><input type="text" name="Casediameter" value=""></li>
+            <li>Type: <br><input type="text" name="castype" value=""></li>
+            <li>Thickness: <br><input type="text" name="Casethick" value=""></li>
+          </ul>
+          <p>Height of the casing finished above grade: <br><input type="text" name="CasingHeight" value="" ></p>
+        </div>
+        <div id="annular" class="grid">
+          <h3>Annular Space &amp; Sealant</h3>
+          <h5>The annulus of the well should be sealed with an impermeable sealent from the bottom of the casing / drive shoe to the surface</h5>
+          <ul>
+            <li>Depth From: <br><input type="text" name="Annulardepthfrom" value=""></li>
+            <li>Depth To: <br><input type="text" name="Annulardepthto" value=""></li>
+            <li>Type of Sealant Used: <br><input type="text" name="AnnularSealType" value=""></li>
+          </ul>
+          <p>If the annulus was not sealed, please state reason why: <input type="text" name="AnnularNotSealed" value=""></p>
+        </div>
+        <div id="screen" class="grid">
+          <h3>Screen Information</h3>
+          <p>Was a Screen installed: <input id="checkbox" type="checkbox" name="ScreenInstalled" value="Yes"></p>
+          <ul>
+            <li>Depth From: <br><input type="text" name="Screendepthfrom" value=""></li>
+            <li>Depth To: <br><input type="text" name="Screendepthto" value=""></li>
+            <li>Slot Size: <br><input type="text" name="Screenslot" value=""></li>
+            <li>Diameter: <br><input type="text" name="Screendiameter" value=""></li>
+            <li>Material: <br><input type="text" name="Screenmaterial" value=""></li>
+          </ul>
+        </div>
+        <div id="drilling" class="grid">
+          <h3>Drilling Method</h3>
+          <p>Click Here If Drive Shoe installed: <input id="checkbox" type="checkbox" name="drillshoe" value="Yes"></p>
+          <ul>
+            <li><input type="checkbox" name="Drilltype1" value="Rotary (Air)" id="drilltype1"><label for="drilltype1"> Rotary (Air)</label></li>
+            <li><input type="checkbox" name="Drilltype2" value="Hammer" id="drilltype2"><label for="drilltype2"> Cloudy</label></li>
+            <li><input type="checkbox" name="Drilltype3" value="Reverse Rotary" id="drilltype3"><label for="drilltype3"> Odourous</label></li>
+            <li><input type="checkbox" name="Drilltype7" value="Other" id="drillype4"><label for="drillype4"> Other </label><input type="text" name="drillother" value=""></li>
+          </ul>
+        </div>
+        <div id="finalstatus" class="grid">
+          <h3>Final Status of Well / Borehole</h3>
+          <ul>
+            <li><input type="radio" class="radio" name="finaltype" value="Domestic" id="finalType1"><label for="finalType1"> Domestic</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Municipal" id="finalType2"><label for="finalType2"> Municipal</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Exploration" id="finalType3"><label for="finalType3"> Exploration</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Sealed Well" id="finalType4"><label for="finalType4"> Sealed Well</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Dewatering" id="finalType5"><label for="finalType5"> Dewatering</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Geothermal" id="finalType6"><label for="finalType6"> Geothermal</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Obsservation" id="finalType7"><label for="finalType7"> Obsservation</label></li>
+            <li><input type="radio" class="radio" name="finaltype" value="Other" id="finalType8"><label for="finalType8"> Other </label><input type="text" name="otherfinal" value=""></li>
+          </ul>
+        </div>
+        <div id="pumptest" class="grid">
+          <h3>Pump Test Results</h3>
+          <div id="flowwell" class="grid">
+            <h5>Flowing Well:</h5>
+            <ul>
+              <input type="radio" class="radio" name="FlowWell" value="Yes" id="floww"><label for="floww"> Yes</label>
+            <input type="radio" class="radio" name="FlowWell" value="No" id="floww"><label for="floww"> No</label>
+            </ul>
+          </div>
+          <div id="PumpMethod" class="grid">
+            <ul>
+              <h5>Method:</h5>
+              <li><input type="radio" class="radio" name="PumpTestMethod" value="Air Lift" id="PumpTestMethod"><label for="PumpTestMethod"> Air Lift</label></li>
+              <li><input type="radio" class="radio" name="PumpTestMethod" value="Pump" id="PumpTestMethod"><label for="PumpTestMethod"> Pump</label></li>
+              <li><input type="radio" class="radio" name="PumpTestMethod" value="Other" id="PumpTestMethod"><label for="PumpTestMethod"> Other </label><input type="text" name="OtherMethod" value=""></li>
+            </ul>
+          </div>
+          <div id="PumpInfo" class="grid">
+            <ul>
+              <li>Static Water Level: <input type="text" name="StaticWaterLevel"></li>
+              <li>Pump Intake At: <input type="text" name="PumpIntake"></li>
+              <li>Pump Test Duration: <input type="text" name="TestDuration"></li>
+              <li>Pumping Rate during Test: <input type="text" name="TestRate"></li>
+            </ul>
+            <ul>
+              <li>Recommended Pumping Rate: <input type="text" name="WaterLevel"></li>
+              <li>Recommended Pump Depth: <input type="text" name="WaterLevel"></li>
+              <li>Estimated Safe Yield: <input type="text" name="WaterLevel"></li>
+            </ul>
+          </div>
+        </div>
+        <div id="ContractorInfo" class="grid">
+          <ul>
+            <li>Well Construction Company: <input type="text" name="Company"></li>
+            <li>Driller: <input type="text" name="Driller"></li>
+            <li>Licence Number: <input type="text" name="LicNum"></li>
+            <li>Driller Assistant: <input type="text" name="DrillAssist"></li>
+            <li>Well Completed on: <input id= "date" type="date" name="WellDate"></li>
+            <li>Comments: <input type="text" name="DrillComments"></li>
+          </ul>
+        </div>
+      </div>
+      <p>Please make sure to include a photo of the well with at least one other reference in the picture (house, shed, street, etc.)</p>
+        <p>I certify that the following information is correct to the best of my knowledge.  I understand that falsifying any information within this form is a criminal offense and could also lead to disciplinary action towards my licence.</p>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+  </form>
+  <footer id="main-footer" class="grid">
+    <p>Copyright &copy; 2018 Shawn Duquet</p>
+  </footer>
+</body>
+</html>
